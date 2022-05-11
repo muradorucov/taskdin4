@@ -1,11 +1,10 @@
 import React,{Component} from "react";
 
-import Content from "./content";
-import ContentInfo from "./contentinfo";
-import Menu from "./menu";
-import Navbar from "./navbar";
-import Search from "./search";
-import Tool from "./tool";
+import Contents from "./component/contents/Contents";
+import Menu from "./component/menu/Menu";
+import Navbar from "./component/navbar/Navbar";
+import Search from "./component/search/Search";
+import Tool from "./component/tool/Tool";
 
 export default class App extends Component{
     render(){
@@ -18,10 +17,7 @@ export default class App extends Component{
                             <Search/>
                             <Tool/>
                         </div>
-                        <div className="contents">
-                            <ContentInfo/>
-                            <Content/>
-                        </div>
+                        <Contents/>
                     </section>
                     <Navbar/>
                 </div>
