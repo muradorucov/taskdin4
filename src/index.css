@@ -37,6 +37,7 @@ ul {
 section {
     width: 100%;
     padding: 14px 22px;
+    border-right: 1px solid rgb(221, 216, 216);
 }
 
 aside {

@@ -1,8 +1,10 @@
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) and (min-width:800px){
     .header p{
         padding:14px 28px ;
         font-size:16px ;
     }
+
+    /*Tools start */
     .tool input{
         font-size: 13px;
         padding: 7px 8px;
@@ -25,6 +27,10 @@
     .tool .btn-margin-left {
         padding: 6px 11px;
     }
+    /*Tools end */
+
+
+    /*Contents start */
     .content-info ul li:first-child {
         border-top-left-radius: 17px;
         border-bottom-left-radius: 17px
@@ -45,8 +51,98 @@
     .content-info ul li p {
         font-size: 14px;
     }
-    .navbar ul {
-        width: 350px;
+    /*Contents end */
+
+
+    /*Navbar start */
+    aside {
+        padding: 0;
+        padding-left: 0;
+    }
+    .navbar ul{
+        display: none;
+    }
+
+    
+    .navbar li {
+        margin-bottom: 47px;
+    }
+    
+    .navbar li:first-child {
+        margin-bottom: 25px;
+    }
+    
+    .navbar li i {
+        font-size: 28px;
+        padding: 6px 12px;
+    }
+    .navbar li span{
+        font-size: 15px;
+    }
+    .navbar .navbar-btn1{
+        display: block;
+    }
+    .navbar .navbar-btn2{
+        display: block;
+    }
+    /*Navbar end */
+}
+
+
+@media screen and (max-width: 800px) and (min-width:544px){
+    .header p{
+        padding:14px 24px ;
+        font-size:15px ;
+    }
+    .tools input {
+        font-size: 14px;
+        width: 33%;
+    }
+    .tool .info {
+        padding: 6px 16px;
+        font-size: 18px;
+    }
+    .tool button {
+        padding: 8px 6px;
+        font-size: 15px;
+    }
+
+
+    .content{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    /*Contents start */
+    .content-info ul li:first-child {
+        border-top-left-radius: 14px;
+        border-bottom-left-radius: 14px
+    }
+    
+    .content-info ul li:last-child {
+        border-top-right-radius: 14px;
+        border-bottom-right-radius: 14px
+    }
+    
+    .content-info ul li {
+        padding-top: 13px;
+        padding-bottom: 20px;
+    }
+    .content-info ul li span {
+        font-size: 26px;
+    }
+    .content-info ul li p {
+        font-size: 13px;
+    }
+    /*Contents end */
+
+    /*Navbar start */
+    aside {
+        padding: 0;
+        padding-left: 0;
+    }
+    .navbar ul{
+        display: none;
     }
     
     .navbar li {
@@ -64,10 +160,100 @@
     .navbar li span{
         font-size: 15px;
     }
+    .navbar .navbar-btn1{
+        display: block;
+        top: 8px;
+    }
+    .navbar .navbar-btn2{
+        display: block;
+    }
+    /*Navbar end */
+}
+
+
+@media screen and (max-width: 544px) and (min-width:348px){
+    .header p{
+        padding:11px 23px ;
+        font-size:13px ;
+    }
+    .tools input {
+        font-size: 13px;
+        width: 20%;
+    }
+    .tool .info {
+        padding: 6px 16px;
+        font-size: 18px;
+    }
+    .tool button {
+        padding: 8px 6px;
+        font-size: 15px;
+    }
+    .content{
+        grid-template-columns: auto;
+    }
+     /*Contents start */
+     .content-info ul li:first-child {
+        border-top-left-radius: 11px;
+        border-bottom-left-radius: 11px
+    }
+    
+    .content-info ul li:last-child {
+        border-top-right-radius: 11px;
+        border-bottom-right-radius: 11px
+    }
+    
+    .content-info ul li {
+        padding-top: 10px;
+        padding-bottom: 18px;
+    }
+    .content-info ul li span {
+        font-size: 15px;
+    }
+    .content-info ul li p {
+        font-size: 10px;
+    }
+    .btn {
+        width: 85px;
+        height: 24px;
+        font-size: 11px;
+        margin-left: 11px;
+        margin-top: 4px;
+    }
+    /*Contents end */
+    /*Navbar start */
+    aside {
+        padding: 0;
+        padding-left: 0;
+    }
     .navbar ul{
         display: none;
     }
-    .navbar .navbar-btn{
+
+    .navbar li {
+        margin-bottom: 47px;
+    }
+    
+    .navbar li:first-child {
+        margin-bottom: 25px;
+    }
+    
+    .navbar li i {
+        font-size: 28px;
+        padding: 6px 12px;
+    }
+    .navbar li span{
+        font-size: 15px;
+    }
+    .navbar .navbar-btn1{
+        display: block;
+        top: 3px;
+    }
+    .navbar .navbar-btn2{
         display: block;
     }
+    /*Navbar end */
+
+
+
 }
+

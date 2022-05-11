@@ -2,9 +2,18 @@ import React from "react";
 
 export default class Navbar extends React.Component{
     state = {
-        data: []
+        data: [],
+        className1:"",
+        className2:""
     };
-    
+    clickHandler1 = () => {
+        this.setState({ className1: "hiy" });
+        console.log("hello");
+    };
+    clickHandler2 = () => {
+        this.setState({ className2: "hit" });
+        console.log("hello");
+    };
     getData=()=>{
         fetch("https://6278b7bcd00bded55add177e.mockapi.io/api/taskdin/navbar")
         .then(res=>res.json())
@@ -16,13 +25,16 @@ export default class Navbar extends React.Component{
         this.getData();
     }
     render(){
-        const { data } = this.state;
+        const { data,className1,className2 } = this.state;
         return(
             <aside className="navbar">
-                <div className="navbar-btn">
-                        <span className="navbar-icon" ><i className="bi bi-list"></i></span>
+                <div className="navbar-btn1">
+                        <span className="navbar-icon" onClick={this.clickHandler1}><i className="bi bi-list"></i></span>
                 </div>
-                <ul>
+                <div className="navbar-btn2">
+                        <span className="navbar-icon" onClick={this.clickHandler2}><i className="bi bi-list"></i></span>
+                </div>
+                <ul className={className1 + className2}>
                     {data.map(item =>
                         <li key={item.id}>
                             <i className={item.icon}></i>

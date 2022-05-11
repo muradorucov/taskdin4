@@ -1,10 +1,14 @@
 /* <<<====== Navbar start ======>>> */
 
-.navbar  {
-    width: 380px;
-    border-left: 1px solid rgb(221, 216, 216);
+.navbar ul {
+    width: 280px;
 }
-
+.hiy{
+    display: block !important;
+}
+.hit{
+    display: none ;
+}
 .navbar li {
     margin-bottom: 47px;
     align-items: flex-start;
@@ -26,17 +30,22 @@
     font-size: 16px;
 }
 
-.navbar .navbar-btn{
+.navbar .navbar-btn1{
     display: none;
     position: absolute;
     right: 0;
     top: 9px;
 }
-.navbar .navbar-btn i{
+.navbar .navbar-btn1 i, .navbar-btn2 i{
     font-size: 26px;
     margin-right: 13px;
     color: #f3f3f3;
 }
-
+.navbar .navbar-btn2 i{
+    font-size: 26px;
+    margin-right: 13px;
+    color: #f3f3f3;
+    display: none;
+}
 
 /* <<<====== Navbar end ======>>> */
