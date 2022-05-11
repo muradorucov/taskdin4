@@ -19,7 +19,7 @@ export default class Tool extends React.Component{
         return(
             <div className="tool">
                 {data.map(item =>
-                        <button className={item.className}><i className={item.icon}></i>{item.desc}</button>
+                        <button key={item.id} className={item.className}><i className={item.icon}></i>{item.desc}</button>
                     )}
             </div>
         )

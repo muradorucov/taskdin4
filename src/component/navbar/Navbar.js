@@ -4,6 +4,7 @@ export default class Navbar extends React.Component{
     state = {
         data: []
     };
+    
     getData=()=>{
         fetch("https://6278b7bcd00bded55add177e.mockapi.io/api/taskdin/navbar")
         .then(res=>res.json())
@@ -18,10 +19,14 @@ export default class Navbar extends React.Component{
         const { data } = this.state;
         return(
             <aside className="navbar">
+                <div className="navbar-btn">
+                        <span className="navbar-icon" ><i className="bi bi-list"></i></span>
+                </div>
                 <ul>
                     {data.map(item =>
                         <li key={item.id}>
-                            <i className={item.icon}></i>{item.name}
+                            <i className={item.icon}></i>
+                            <span>{item.name}</span>
                         </li>
                     )}
                 </ul>

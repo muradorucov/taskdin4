@@ -1,6 +1,6 @@
 /* <<<====== Navbar start ======>>> */
 
-.navbar {
+.navbar  {
     width: 380px;
     border-left: 1px solid rgb(221, 216, 216);
 }
@@ -21,6 +21,21 @@
     padding: 7px 12px;
     margin-left: 10px;
     margin-right: 13px;
+}
+.navbar li span{
+    font-size: 16px;
+}
+
+.navbar .navbar-btn{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 9px;
+}
+.navbar .navbar-btn i{
+    font-size: 26px;
+    margin-right: 13px;
+    color: #f3f3f3;
 }
 
 

@@ -17,7 +17,7 @@ export default class ContentInfo extends React.Component{
     render(){
         const { data } = this.state;
         return(
-            <div class="content-info">
+            <div className="content-info">
                 <ul>
                     {data.map(item =>
                         <li key={item.id}>

@@ -19,13 +19,11 @@ export default class Content extends React.Component{
         return(
             <div className="content">
                 {data.map(item =>
-                    <div className="content-item">
+                    <div className="content-item" key={item.id}>
                         <div className={item.colorClass}></div>
                         <div className="desc">
                             <p>Getting Started</p>
-                            <div className="btn">
-                                <span>COMPLETED</span>
-                            </div>
+                            {item.isDoneProgress ? <div className="btn"><span>COMPLETED</span></div> :<div className="btn in-progres"><span>0%</span></div>}
                         </div>
                     </div>
                 )}
