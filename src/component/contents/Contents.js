@@ -1,10 +1,7 @@
 import React from "react";
 
-import ContentInfo from "../content-info/ContentInfo";
-import Content from "../content/Content";
-
-
-
+import ContentInfo from "./content-info/ContentInfo";
+import Content from "./content/Content";
 
 
 export default class Contents extends React.Component{

@@ -1,0 +1,27 @@
+/* <<<====== Navbar start ======>>> */
+
+.navbar {
+    width: 380px;
+    border-left: 1px solid rgb(221, 216, 216);
+}
+
+.navbar li {
+    margin-bottom: 47px;
+    align-items: flex-start;
+}
+
+.navbar li:first-child {
+    margin-bottom: 25px;
+}
+
+.navbar li i {
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+    padding: 7px 12px;
+    margin-left: 10px;
+    margin-right: 13px;
+}
+
+
+/* <<<====== Navbar end ======>>> */

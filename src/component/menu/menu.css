@@ -1,0 +1,11 @@
+.header {
+    width: 100%;
+    color: #fff;
+    background-color: #0082d8;
+}
+
+.header p {
+    padding: 19px 28px;
+    font-weight: bold;
+    font-size: 18px;
+}
