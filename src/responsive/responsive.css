@@ -153,7 +153,6 @@
     }
     .navbar ul{
         display: none;
-        width: 245px;
     }
     
     .navbar li {
@@ -247,7 +246,6 @@
     }
     .navbar ul{
         display: none;
-        width: 194px;
     }
 
     .navbar li {
@@ -273,8 +271,6 @@
         top: 3px;
     }
 
-    .responsive-nav {
-        padding: 10px 0;
-    }
+    
     /*Navbar end */
 }

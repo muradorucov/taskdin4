@@ -24,16 +24,28 @@
     font-size: 16px;
 }
 
-.navbar .navbar-btn1, .navbar .navbar-btn2{
+.navbar .navbar-btn1{
     display: none;
     position: absolute;
     right: 0;
     top: 9px;
 }
-.navbar .navbar-btn1 i, .navbar .navbar-btn2 i{
+.navbar .navbar-btn2{
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 9px;
+    z-index: 2;
+}
+.navbar .navbar-btn1 i{
     font-size: 26px;
     margin-right: 13px;
     color: #f3f3f3;
+}
+.navbar .navbar-btn2 i{
+    font-size: 26px;
+    margin-right: 13px;
+    color: #0c0c0c;
 }
 
 .navbar-btn{
@@ -44,12 +56,15 @@
 }
 
 .responsive-nav{
+    width: 100% !important;
     display: block !important;
-    position: absolute;
-    top: 50px;
+    position: fixed;
+    top: 0;
     right: 0;
+    bottom: 0;
+    left: 0;
     background-color: #ffffff;
-    padding: 28px 0;
+    padding: 50px 0;
 }
 .nav-d-none{
     display: none ;
