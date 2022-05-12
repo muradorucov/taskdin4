@@ -3,15 +3,17 @@ import React from "react";
 export default class Navbar extends React.Component{
     state = {
         data: [],
-        className1:"",
-        className2:""
+        responsiveNav:"",
+        navNone:"",
+        classBtn1:"navbar-btn1",
+        classBtn2:"navbar-btn2"
     };
     clickHandler1 = () => {
-        this.setState({ className1: "hiy" });
+        this.setState({ responsiveNav: "responsive-nav",classBtn1:"navbar-btn1 navbar-btn-d-none", classBtn2:"navbar-btn2 navbar-btn"});
         console.log("hello");
     };
     clickHandler2 = () => {
-        this.setState({ className2: "hit" });
+        this.setState({ navNone: "nav-d-none", classBtn1:"navbar-btn1 navbar-btn", classBtn2:"navbar-btn2 navbar-btn-d-none"});
         console.log("hello");
     };
     getData=()=>{
@@ -25,16 +27,16 @@ export default class Navbar extends React.Component{
         this.getData();
     }
     render(){
-        const { data,className1,className2 } = this.state;
+        const { data,responsiveNav,navNone,classBtn2,classBtn1 } = this.state;
         return(
             <aside className="navbar">
-                <div className="navbar-btn1">
+                <div className={classBtn1}>
                         <span className="navbar-icon" onClick={this.clickHandler1}><i className="bi bi-list"></i></span>
                 </div>
-                <div className="navbar-btn2">
+                <div className={classBtn2}>
                         <span className="navbar-icon" onClick={this.clickHandler2}><i className="bi bi-list"></i></span>
                 </div>
-                <ul className={className1 + className2}>
+                <ul className={responsiveNav + navNone}>
                     {data.map(item =>
                         <li key={item.id}>
                             <i className={item.icon}></i>

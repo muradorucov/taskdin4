@@ -1,3 +1,9 @@
+@media screen and (min-width: 1200px){
+    .responsive-nav{
+        display: none !important;
+    }
+}
+
 @media screen and (max-width: 1200px) and (min-width:800px){
     .header p{
         padding:14px 28px ;
@@ -82,9 +88,6 @@
     .navbar .navbar-btn1{
         display: block;
     }
-    .navbar .navbar-btn2{
-        display: block;
-    }
     /*Navbar end */
 }
 
@@ -143,6 +146,7 @@
     }
     .navbar ul{
         display: none;
+        width: 245px;
     }
     
     .navbar li {
@@ -154,18 +158,18 @@
     }
     
     .navbar li i {
-        font-size: 28px;
+        font-size: 26px;
         padding: 6px 12px;
     }
-    .navbar li span{
-        font-size: 15px;
+    .navbar li span {
+        font-size: 14px;
     }
     .navbar .navbar-btn1{
         display: block;
         top: 8px;
     }
     .navbar .navbar-btn2{
-        display: block;
+        top: 8px;
     }
     /*Navbar end */
 }
@@ -227,29 +231,34 @@
     }
     .navbar ul{
         display: none;
+        width: 194px;
     }
 
     .navbar li {
-        margin-bottom: 47px;
+        margin-bottom: 22px;
     }
     
     .navbar li:first-child {
-        margin-bottom: 25px;
+        margin-bottom: 22px;
     }
     
     .navbar li i {
-        font-size: 28px;
-        padding: 6px 12px;
+        font-size: 22px;
+        padding: 7px 11px;
     }
     .navbar li span{
-        font-size: 15px;
+        font-size: 13px;
     }
     .navbar .navbar-btn1{
         display: block;
         top: 3px;
     }
     .navbar .navbar-btn2{
-        display: block;
+        top: 3px;
+    }
+
+    .responsive-nav {
+        padding: 10px 0;
     }
     /*Navbar end */
 
