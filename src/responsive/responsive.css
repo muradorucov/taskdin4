@@ -182,7 +182,7 @@
 }
 
 
-@media screen and (max-width: 544px) and (min-width:348px){
+@media screen and (max-width: 544px) and (min-width:344px){
     .header p{
         padding:11px 23px ;
         font-size:13px ;
