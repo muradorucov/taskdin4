@@ -109,13 +109,20 @@
         padding: 8px 6px;
         font-size: 15px;
     }
-
+    section {
+        padding: 10px 19px;
+    }
+    .contents {
+        padding: 7px 0;
+    }
 
     .content{
         display: grid;
         grid-template-columns: auto auto;
     }
-
+    .content-info {
+        padding-bottom: 7px;
+    }
     /*Contents start */
     .content-info ul li:first-child {
         border-top-left-radius: 14px;
@@ -192,8 +199,17 @@
         padding: 8px 6px;
         font-size: 15px;
     }
+    section {
+        padding: 10px 19px;
+    }
+    .contents {
+        padding: 7px 0;
+    }
     .content{
         grid-template-columns: auto;
+    }
+    .content-info {
+        padding-bottom: 7px;
     }
      /*Contents start */
      .content-info ul li:first-child {
